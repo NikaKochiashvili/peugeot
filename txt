@@ -1,0 +1,37 @@
+<div
+  class="hero-banner bg-[url('./assets/img/mobile-hero-banner.png')] h-[700px] w-full bg-center xl:h-screen bg-cover"
+>
+  <div class="main-wrapper px-8 py-5">
+    <!-- <div class="nav-bar">
+        <nav>
+          <ul>
+            <li>
+              <a href="">MODELS</a>
+            </li>
+            <li>
+              <a href="">AFTER SALES TESTING</a>
+            </li>
+            <li>
+              <a href="">ABOUT PEUGEOT</a>
+            </li>
+            <li>
+              <a href="">BUSINESS</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact-message-container"></div>
+        <div class="contact-phone-container"></div>
+      </div> -->
+    <div class="top-bar-container flex flex-row justify-between">
+      <div class="burger-menu w-6 flex flex-col justify-around">
+        <div class="line1 h-px w-full bg-black"></div>
+        <div class="line2 h-px w-full bg-black"></div>
+        <div class="line3 h-px w-full bg-black"></div>
+      </div>
+      <div class="lang">
+        <button>ENG</button>
+      </div>
+    </div>
+    <div class="logo"></div>
+  </div>
+</div>
