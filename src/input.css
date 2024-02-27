@@ -17,5 +17,15 @@
 }
 
 .line {
-  @apply h-px w-full bg-white transition-all duration-100 ease-in-out;
+  @apply h-px w-full bg-white;
+}
+
+.menu-toggle .line1 {
+  @apply transform rotate-45 translate-y-[8px];
+}
+.menu-toggle .line2 {
+  @apply opacity-0;
+}
+.menu-toggle .line3 {
+  @apply transform -rotate-45 -translate-y-[8px];
 }

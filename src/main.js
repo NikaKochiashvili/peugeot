@@ -10,9 +10,11 @@ const showBurgerMenu = () => {
   isMenuOpen = !isMenuOpen;
   if (isMenuOpen) {
     burgerMenu.classList.add("show-menu");
+    menuBtn.classList.add("menu-toggle");
     document.body.style.overflow = "hidden";
   } else {
     burgerMenu.classList.remove("show-menu");
+    menuBtn.classList.remove("menu-toggle");
     document.body.style.overflow = "visible";
   }
 };
@@ -30,6 +32,6 @@ window.onscroll = () => {
     myNav.classList.add("nav-transparent");
     myNav.classList.remove("nav-colored");
   }
-
-  console.log("HII");
 };
+
+// console.log("HII");
