@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "montserrat";
+  src: url("/src/assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("/src/assets/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url("/src/assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("/src/assets/fonts/Montserrat-Bold.ttf");
+}
+
 .flex-center {
   @apply flex items-center justify-center;
 }
@@ -23,9 +43,43 @@
 .menu-toggle .line1 {
   @apply transform rotate-45 translate-y-[8px];
 }
+
 .menu-toggle .line2 {
   @apply opacity-0;
 }
+
 .menu-toggle .line3 {
   @apply transform -rotate-45 -translate-y-[8px];
+}
+
+.contact-wrapper {
+  @apply p-0 2xl:px-28 xl:pl-0 xl:pr-10;
+}
+
+.wrapper {
+  @apply px-0 md:px-12;
+}
+
+.btn-hero {
+  @apply bg-[#00A3E0] text-white text-sm rounded border-2 border-sky-500 border-opacity-35 uppercase font-bold;
+}
+
+.header {
+  @apply bg-transparent md:pt-7;
+}
+
+.header-padding {
+  @apply bg-black md:pt-2;
+}
+.show-item {
+  @apply opacity-100 visible;
+}
+.item-hidden {
+  @apply opacity-0 invisible;
+}
+.height-zero {
+  @apply h-0 overflow-hidden;
+}
+.height-screen {
+  @apply h-screen overflow-visible;
 }
