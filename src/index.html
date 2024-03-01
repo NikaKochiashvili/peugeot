@@ -6,13 +6,13 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Peugeot.ge | Peugeot Georgia</title>
   </head>
-  <body>
-    <!-- Top Bar -->
+  <body class="font-montserrat">
+    <!-- TOP BAR -->
     <div
-      class="fixed w-full h-[105px] z-10 nav-transparent transition-all duration-500 md:hidden"
+      class="fixed w-full h-[105px] z-10 nav-transparent flex xl:hidden transition-all duration-500"
       id="myNav"
     >
-      <div class="main-wrapper px-8 py-5 absolute w-full md:hidden">
+      <div class="main-wrapper px-8 py-5 absolute w-full xl:hidden">
         <div class="top-bar-container flex flex-row justify-between">
           <div
             class="burger-menu w-6 flex flex-col justify-around z-[101]"
@@ -37,9 +37,9 @@
         </div>
       </div>
     </div>
-    <!-- Burger Menu -->
+    <!-- MOBILE HEADER SECTION -->
     <div
-      class="burger-menu-bg md:hidden bg-black h-screen fixed w-full -translate-x-[100%] transition-all duration-300 z-[2] overflow-scroll"
+      class="burger-menu-bg xl:hidden bg-black h-screen fixed w-full -translate-x-[100%] transition-all duration-300 z-[2] overflow-scroll"
       id="burgerMenu"
     >
       <div class="main-wrapper px-8 pb-5 pt-[160px]">
@@ -114,289 +114,413 @@
         </div>
       </div>
     </div>
+    <!-- HEADER DESKTOP -->
+    <!-- class="menu-bar sm:hidden fixed w-full md:px-20 bg-transparent transition-all duration-300 hidden lg:flex lg:flex-row lg:items-center lg:justify-between " -->
+    <div
+      id="desktop-header"
+      class="h-[100px] bg-transparent absolute top-0 w-full transition-all duration-300 xl:flex items-end hidden"
+    >
+      <div class="flex lg:gap-14 bg-transparent w-full md:px-11 items-center">
+        <a href="./index.html" class="menu-logo">
+          <img src="./assets/img/desktop-logo.svg" alt="" />
+        </a>
 
-    <div class="global-container" id="globalContainer">
-      <!-- FIRST SECTION -->
-      <div
-        class="section-one h-[450px] bg-cover bg-center bg-no-repeat m-auto md:bg-[url('./assets/img/desktop-hero-banner.jpg')] bg-[url('./assets/img/mobile-hero-banner.png')] flex flex-col md:justify-between sm:justify-end md:h-screen"
-      >
         <div
-          class="menu-bar sm:hidden md:px-20 md:pt-7 md:flex md:flex-row md:items-center md:justify-between md:gap-14"
+          id="header-menu"
+          class="flex justify-between items-center w-full h-[69px] header-border"
         >
-          <a href="" class="menu-logo">
-            <img src="./assets/img/desktop-logo.svg" alt="" />
-          </a>
+          <ul
+            class="flex flex-row gap-x-6 justify-between items-center text-white"
+          >
+            <li
+              class="uppercase cursor-pointer font-bold text-lg h-full hover:border-b-4"
+            >
+              models
+            </li>
+            <li
+              class="uppercase cursor-pointer font-bold text-lg h-full hover:border-b-4"
+            >
+              after sales testing
+            </li>
+            <li
+              id="nav-link"
+              class="uppercase cursor-pointer font-bold text-lg h-full hover:border-b-4"
+            >
+              about peugeot
+            </li>
+            <li class="uppercase font-bold text-lg h-full hover:border-b-4">
+              <a href="./business.html">business</a>
+            </li>
+          </ul>
           <div
-            class="menu-elements flex flex-row justify-between items-centers w-full border-b-2 pb-2 border-white"
+            class="social-network flex flex-row justify-between items-center gap-4"
           >
-            <div
-              class="nav-bar flex flex-row justify-between font-bold text-lg text-white gap-7 items-center nav-hover:hover"
-            >
-              <a
-                href=""
-                class="hover:text-button-color hover:border-b-4 hover:border-nav-hover"
-              >
-                <h1>MODELS</h1>
-              </a>
-              <a
-                href=""
-                class="hover:text-button-color hover:border-b-4 hover:border-nav-hover"
-              >
-                <h1>AFTER SALES TESTING</h1>
-              </a>
-              <a
-                href=""
-                class="hover:text-button-color hover:border-b-4 hover:border-nav-hover"
-              >
-                <h1>ABOUT PEUGEOT</h1>
-              </a>
-              <a
-                href="./contact.html"
-                class="hover:text-button-color hover:border-b-4 hover:border-nav-hover"
-              >
-                <h1>BUSINESS</h1>
-              </a>
-            </div>
-            <div class="social-network flex flex-row justify-between gap-4">
-              <a href="" class="soc-img hover:scale-125 hover:duration-150">
-                <img src="./assets/img/Facebook.svg" alt="Facebook" />
-              </a>
-              <a href="" class="soc-img hover:scale-125 hover:duration-150">
-                <img src="./assets/img/Instagram.svg" alt="Instagram" />
-              </a>
-              <a href="" class="soc-img hover:scale-125 hover:duration-150">
-                <img src="./assets/img/Youtube.svg" alt="Youtube" />
-              </a>
-              <a
-                href=""
-                class="soc-img hover:scale-125 hover:duration-150 fill-black"
-              >
-                <img src="./assets/img/Linkedin.svg" alt="Linkedin" />
-              </a>
-              <a
-                href=""
-                class="flex items-center text-lg text-white font-semibold hover:text-button-color"
-              >
-                <h1>ENG</h1>
-              </a>
-            </div>
-          </div>
-        </div>
-        <button
-          class="sign-up-for-test-drive bg-button-color hover:bg-black hover:duration-300 mx-auto md:mb-[8%] sm:mb-[8%] md:w-[340px] md:h-[52px] md:ml-28 py-[10px] px-10 font-bold leading-5 text-center text-base md:text-xl text-white"
-        >
-          SIGN UP FOR TEST DRIVE!
-        </button>
-      </div>
-      <!-- SECOND SECTION -->
-      <div class="second-section m-auto bg-black">
-        <div class="flex-container flex flex-col md:flex-row items-center">
-          <a
-            href=""
-            class="address flex flex-row items-center py-6 border-b-[1px] border-border-color w-full text-white hover:text-nav-hover group"
-          >
-            <div
-              class="center-items flex flex-row items-center content-center m-auto gap-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <g opacity="0.6">
-                  <path
-                    class="group-hover:fill-nav-hover"
-                    d="M14.7808 19.7005L14.1906 19.2377L14.7808 19.7005ZM9.21921 19.7005L8.62903 20.1633L9.21921 19.7005ZM12 22.0055V21.2555V22.0055ZM19.25 9.6087C19.25 10.8352 18.6104 12.4764 17.6037 14.256C16.6137 16.0063 15.3342 17.7794 14.1906 19.2377L15.371 20.1633C16.5371 18.6762 17.8672 16.837 18.9094 14.9945C19.9349 13.1814 20.75 11.2494 20.75 9.6087H19.25ZM9.80938 19.2377C8.66578 17.7794 7.38628 16.0063 6.39625 14.256C5.38962 12.4764 4.75 10.8352 4.75 9.6087H3.25C3.25 11.2494 4.06511 13.1814 5.09064 14.9945C6.13277 16.837 7.46288 18.6762 8.62903 20.1633L9.80938 19.2377ZM4.75 9.6087C4.75 5.21571 8.04678 1.75 12 1.75V0.25C7.11666 0.25 3.25 4.49277 3.25 9.6087H4.75ZM12 1.75C15.9532 1.75 19.25 5.21571 19.25 9.6087H20.75C20.75 4.49277 16.8833 0.25 12 0.25V1.75ZM14.1906 19.2377C13.5717 20.027 13.1641 20.5426 12.7992 20.8741C12.4664 21.1764 12.2442 21.2555 12 21.2555V22.7555C12.7291 22.7555 13.2948 22.4504 13.8078 21.9844C14.2886 21.5476 14.7849 20.9107 15.371 20.1633L14.1906 19.2377ZM8.62903 20.1633C9.21511 20.9107 9.71136 21.5476 10.1922 21.9844C10.7052 22.4504 11.2709 22.7555 12 22.7555V21.2555C11.7558 21.2555 11.5336 21.1764 11.2008 20.8741C10.8359 20.5426 10.4283 20.027 9.80938 19.2377L8.62903 20.1633ZM8.25 10C8.25 12.0711 9.92893 13.75 12 13.75V12.25C10.7574 12.25 9.75 11.2426 9.75 10H8.25ZM12 13.75C14.0711 13.75 15.75 12.0711 15.75 10H14.25C14.25 11.2426 13.2426 12.25 12 12.25V13.75ZM15.75 10C15.75 7.92893 14.0711 6.25 12 6.25V7.75C13.2426 7.75 14.25 8.75736 14.25 10H15.75ZM12 6.25C9.92893 6.25 8.25 7.92893 8.25 10H9.75C9.75 8.75736 10.7574 7.75 12 7.75V6.25Z"
-                    fill="white"
-                    fill-opacity="0.8"
-                  />
-                </g>
-              </svg>
-              <h1
-                class="font-semibold leading-4 md:leading-7 md:text-2xl text-center text-base"
-              >
-                ADDRESS
-              </h1>
-            </div>
-          </a>
-          <a
-            href=""
-            class="brochures flex flex-row items-center py-6 border-b-[1px] md:border-x-[1px] border-border-color w-full text-white hover:text-nav-hover group"
-          >
-            <div
-              class="center-items flex flex-row items-center content-center m-auto gap-4"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.8">
-                  <path
-                    class="group-hover:fill-nav-hover"
-                    d="M5.06107 21.0451L5.50191 20.4383L5.06107 21.0451ZM3.95491 19.9389L4.56168 19.4981L3.95491 19.9389ZM20.0451 19.9389L19.4383 19.4981L20.0451 19.9389ZM18.9389 21.0451L18.4981 20.4383L18.9389 21.0451ZM18.9389 2.95491L18.4981 3.56168L18.9389 2.95491ZM20.0451 4.06107L19.4383 4.50191L20.0451 4.06107ZM5.06107 2.95491L5.50191 3.56168L5.06107 2.95491ZM3.95491 4.06107L4.56168 4.50191L3.95491 4.06107ZM8 7.25C7.58579 7.25 7.25 7.58579 7.25 8C7.25 8.41421 7.58579 8.75 8 8.75V7.25ZM16 8.75C16.4142 8.75 16.75 8.41421 16.75 8C16.75 7.58579 16.4142 7.25 16 7.25V8.75ZM8 11.25C7.58579 11.25 7.25 11.5858 7.25 12C7.25 12.4142 7.58579 12.75 8 12.75V11.25ZM16 12.75C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25V12.75ZM13 15.25C12.5858 15.25 12.25 15.5858 12.25 16C12.25 16.4142 12.5858 16.75 13 16.75V15.25ZM16 16.75C16.4142 16.75 16.75 16.4142 16.75 16C16.75 15.5858 16.4142 15.25 16 15.25V16.75ZM20.25 11V13H21.75V11H20.25ZM3.75 13V11H2.25V13H3.75ZM12 21.25C10.1084 21.25 8.74999 21.249 7.69804 21.135C6.66013 21.0225 6.00992 20.8074 5.50191 20.4383L4.62023 21.6518C5.42656 22.2377 6.37094 22.5 7.53648 22.6263C8.68798 22.751 10.1418 22.75 12 22.75V21.25ZM2.25 13C2.25 14.8582 2.24897 16.312 2.37373 17.4635C2.50001 18.6291 2.76232 19.5734 3.34815 20.3798L4.56168 19.4981C4.19259 18.9901 3.97745 18.3399 3.865 17.302C3.75103 16.25 3.75 14.8916 3.75 13H2.25ZM5.50191 20.4383C5.14111 20.1762 4.82382 19.8589 4.56168 19.4981L3.34815 20.3798C3.70281 20.8679 4.13209 21.2972 4.62023 21.6518L5.50191 20.4383ZM20.25 13C20.25 14.8916 20.249 16.25 20.135 17.302C20.0225 18.3399 19.8074 18.9901 19.4383 19.4981L20.6518 20.3798C21.2377 19.5734 21.5 18.6291 21.6263 17.4635C21.751 16.312 21.75 14.8582 21.75 13H20.25ZM12 22.75C13.8582 22.75 15.312 22.751 16.4635 22.6263C17.6291 22.5 18.5734 22.2377 19.3798 21.6518L18.4981 20.4383C17.9901 20.8074 17.3399 21.0225 16.302 21.135C15.25 21.249 13.8916 21.25 12 21.25V22.75ZM19.4383 19.4981C19.1762 19.8589 18.8589 20.1762 18.4981 20.4383L19.3798 21.6518C19.8679 21.2972 20.2972 20.8679 20.6518 20.3798L19.4383 19.4981ZM12 2.75C13.8916 2.75 15.25 2.75103 16.302 2.865C17.3399 2.97745 17.9901 3.19259 18.4981 3.56168L19.3798 2.34815C18.5734 1.76232 17.6291 1.50001 16.4635 1.37373C15.312 1.24897 13.8582 1.25 12 1.25V2.75ZM21.75 11C21.75 9.14184 21.751 7.68798 21.6263 6.53648C21.5 5.37094 21.2377 4.42656 20.6518 3.62023L19.4383 4.50191C19.8074 5.00992 20.0225 5.66013 20.135 6.69804C20.249 7.74999 20.25 9.10843 20.25 11H21.75ZM18.4981 3.56168C18.8589 3.82382 19.1762 4.14111 19.4383 4.50191L20.6518 3.62023C20.2972 3.13209 19.8679 2.70281 19.3798 2.34815L18.4981 3.56168ZM12 1.25C10.1418 1.25 8.68798 1.24897 7.53648 1.37373C6.37094 1.50001 5.42656 1.76232 4.62023 2.34815L5.50191 3.56168C6.00992 3.19259 6.66013 2.97745 7.69804 2.865C8.74999 2.75103 10.1084 2.75 12 2.75V1.25ZM3.75 11C3.75 9.10843 3.75103 7.74999 3.865 6.69804C3.97745 5.66013 4.19259 5.00992 4.56168 4.50191L3.34815 3.62023C2.76232 4.42656 2.50001 5.37094 2.37373 6.53648C2.24897 7.68798 2.25 9.14184 2.25 11H3.75ZM4.62023 2.34815C4.13209 2.70281 3.70281 3.13209 3.34815 3.62023L4.56168 4.50191C4.82382 4.14111 5.14111 3.82382 5.50191 3.56168L4.62023 2.34815ZM8 8.75H16V7.25H8V8.75ZM8 12.75H16V11.25H8V12.75ZM13 16.75H16V15.25H13V16.75Z"
-                    fill="white"
-                  />
-                </g>
-              </svg>
-
-              <h1
-                class="font-semibold leading-4 md:leading-7 md:text-2xl text-center text-base"
-              >
-                BROCHURES
-              </h1>
-            </div></a
-          >
-          <a
-            href=""
-            class="contact flex flex-row items-center py-6 border-b-[1px] border-border-color w-full text-white hover:text-nav-hover group"
-          >
-            <div
-              class="center-items flex flex-row items-center content-center m-auto gap-4"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.6">
-                  <path
-                    class="group-hover:fill-nav-hover"
-                    d="M4.92893 7.92893L5.45926 7.3986L4.92893 7.92893ZM3 6L2.46967 6.53033L3 6ZM11 20.25C10.5858 20.25 10.25 20.5858 10.25 21C10.25 21.4142 10.5858 21.75 11 21.75V20.25ZM21.0451 18.9389L20.4383 18.4981V18.4981L21.0451 18.9389ZM19.9389 20.0451L19.4981 19.4383V19.4383L19.9389 20.0451ZM19.9389 3.95491L20.3798 3.34815V3.34815L19.9389 3.95491ZM21.0451 5.06107L20.4383 5.50191V5.50191L21.0451 5.06107ZM4.06107 3.95491L3.62023 3.34815L3.62023 3.34815L4.06107 3.95491ZM1.25 12C1.25 12.4142 1.58579 12.75 2 12.75C2.41421 12.75 2.75 12.4142 2.75 12H1.25ZM2.95491 5.06107L2.34815 4.62023L2.34815 4.62023L2.95491 5.06107ZM1 18.25C0.585786 18.25 0.25 18.5858 0.25 19C0.25 19.4142 0.585786 19.75 1 19.75V18.25ZM7 19.75C7.41421 19.75 7.75 19.4142 7.75 19C7.75 18.5858 7.41421 18.25 7 18.25V19.75ZM1 15.25C0.585786 15.25 0.25 15.5858 0.25 16C0.25 16.4142 0.585786 16.75 1 16.75V15.25ZM4 16.75C4.41421 16.75 4.75 16.4142 4.75 16C4.75 15.5858 4.41421 15.25 4 15.25V16.75ZM2.62103 5.62103L1.94538 5.29546L2.62103 5.62103ZM5.45926 7.3986L3.65165 5.59099L2.59099 6.65165L4.3986 8.45926L5.45926 7.3986ZM20.3483 5.59099L18.5407 7.3986L19.6014 8.45926L21.409 6.65165L20.3483 5.59099ZM4.3986 8.45926C6.05028 10.1109 7.34126 11.4042 8.48288 12.2752C9.64181 13.1594 10.7345 13.6789 12 13.6789V12.1789C11.1944 12.1789 10.4183 11.8651 9.39275 11.0827C8.34994 10.287 7.14092 9.08026 5.45926 7.3986L4.3986 8.45926ZM18.5407 7.3986C16.8591 9.08026 15.6501 10.287 14.6072 11.0827C13.5817 11.8651 12.8056 12.1789 12 12.1789V13.6789C13.2655 13.6789 14.3582 13.1594 15.5171 12.2752C16.6587 11.4042 17.9497 10.1109 19.6014 8.45926L18.5407 7.3986ZM5.45926 7.3986L3.53033 5.46967L2.46967 6.53033L4.3986 8.45926L5.45926 7.3986ZM20.4697 5.46967L18.5407 7.3986L19.6014 8.45926L21.5303 6.53033L20.4697 5.46967ZM11 3.75H13V2.25H11V3.75ZM13 20.25H11V21.75H13V20.25ZM21.25 12C21.25 13.8916 21.249 15.25 21.135 16.302C21.0225 17.3399 20.8074 17.9901 20.4383 18.4981L21.6518 19.3798C22.2377 18.5734 22.5 17.6291 22.6263 16.4635C22.751 15.312 22.75 13.8582 22.75 12H21.25ZM13 21.75C14.8582 21.75 16.312 21.751 17.4635 21.6263C18.6291 21.5 19.5734 21.2377 20.3798 20.6518L19.4981 19.4383C18.9901 19.8074 18.3399 20.0225 17.302 20.135C16.25 20.249 14.8916 20.25 13 20.25V21.75ZM20.4383 18.4981C20.1762 18.8589 19.8589 19.1762 19.4981 19.4383L20.3798 20.6518C20.8679 20.2972 21.2972 19.8679 21.6518 19.3798L20.4383 18.4981ZM13 3.75C14.8916 3.75 16.25 3.75103 17.302 3.865C18.3399 3.97745 18.9901 4.19259 19.4981 4.56168L20.3798 3.34815C19.5734 2.76232 18.6291 2.50001 17.4635 2.37373C16.312 2.24897 14.8582 2.25 13 2.25V3.75ZM19.4981 4.56168C19.8589 4.82382 20.1762 5.14111 20.4383 5.50191L21.6518 4.62024C21.2972 4.13209 20.8679 3.70281 20.3798 3.34815L19.4981 4.56168ZM11 2.25C9.14184 2.25 7.68798 2.24897 6.53648 2.37373C5.37094 2.50001 4.42656 2.76232 3.62023 3.34815L4.50191 4.56168C5.00992 4.19259 5.66013 3.97745 6.69804 3.865C7.74999 3.75103 9.10843 3.75 11 3.75V2.25ZM3.62023 3.34815C3.13209 3.70281 2.70281 4.13209 2.34815 4.62023L3.56168 5.50191C3.82382 5.14111 4.14111 4.82382 4.50191 4.56168L3.62023 3.34815ZM1 19.75H7V18.25H1V19.75ZM1 16.75H4V15.25H1V16.75ZM2.75 12C2.75 10.3648 2.75049 9.12493 2.8255 8.13204C2.90037 7.14093 3.04588 6.46709 3.29668 5.9466L1.94538 5.29546C1.57515 6.06379 1.41014 6.95506 1.32976 8.01904C1.24951 9.08125 1.25 10.3864 1.25 12H2.75ZM3.29668 5.9466C3.37348 5.78722 3.46113 5.64031 3.56168 5.50191L2.34815 4.62023C2.19354 4.83304 2.06012 5.05734 1.94538 5.29546L3.29668 5.9466ZM3.53033 5.46967L3.15136 5.0907L2.0907 6.15136L2.46967 6.53033L3.53033 5.46967ZM22.75 12C22.75 10.3864 22.7505 9.08125 22.6702 8.01904C22.5899 6.95506 22.4248 6.06379 22.0546 5.29546L20.7033 5.9466C20.9541 6.46709 21.0996 7.14093 21.1745 8.13204C21.2495 9.12493 21.25 10.3648 21.25 12H22.75ZM22.0546 5.29546C21.9399 5.05734 21.8065 4.83304 21.6518 4.62024L20.4383 5.50191C20.5389 5.64031 20.6265 5.78722 20.7033 5.9466L22.0546 5.29546ZM21.5303 6.53033L21.9093 6.15136L20.8486 5.0907L20.4697 5.46967L21.5303 6.53033Z"
-                    fill="white"
-                  />
-                </g>
-              </svg>
-
-              <h1
-                class="font-semibold leading-4 md:leading-7 md:text-2xl text-center text-base"
-              >
-                CONTACT
-              </h1>
-            </div></a
-          >
-        </div>
-        <!-- footer -->
-        <div
-          class="footer px-8 flex flex-col md:flex-row md:justify-around font-semibold"
-        >
-          <div class="models text-sm">
-            <a href="">
-              <h1
-                class="text-white hover:text-nav-hover pb-2 md:pb-6 pt-6 text-base md:leading-7 md:text-2xl"
-              >
-                MODELS
-              </h1>
+            <a href="" class="soc-img hover:scale-125 hover:duration-150">
+              <img src="./assets/img/Facebook.svg" alt="Facebook" />
             </a>
-            <div class="models-padding flex flex-col gap-1 md:gap-[10px]">
-              <a
-                href=""
-                class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
-                >Hatchback</a
-              >
-              <a
-                href=""
-                class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
-                >Sedan</a
-              >
-              <a
-                href=""
-                class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
-                >SUV</a
-              >
-              <a
-                href=""
-                class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
-                >Transit</a
-              >
-            </div>
-          </div>
-          <div class="contact text-sm">
-            <a href="">
-              <h1
-                class="text-white hover:text-nav-hover pb-2 md:pb-6 pt-6 text-base md:leading-7 md:text-2xl"
-              >
-                CONTACT
-              </h1>
+            <a href="" class="soc-img hover:scale-125 hover:duration-150">
+              <img src="./assets/img/Instagram.svg" alt="Instagram" />
+            </a>
+            <a href="" class="soc-img hover:scale-125 hover:duration-150">
+              <img src="./assets/img/Youtube.svg" alt="Youtube" />
             </a>
             <a
               href=""
-              class="text-p-color hover:text-nav-hover md:text-lg md:leading-5"
-              >Get an offer</a
+              class="soc-img hover:scale-125 hover:duration-150 fill-black"
             >
-          </div>
-          <div class="contact pb-6">
-            <a href="">
-              <h1
-                class="text-white pb-2 md:pb-6 pt-6 text-base md:leading-7 md:text-2xl hover:text-nav-hover"
-              >
-                CONTACT US
-              </h1>
+              <img src="./assets/img/Linkedin.svg" alt="Linkedin" />
             </a>
-            <ul class="list-disc translate-x-3">
-              <li class="text-p-color text-[9px] hover:text-nav-hover group">
-                <a
-                  href=""
-                  class="text-p-color text-sm md:text-lg md:leading-5 group-hover:text-nav-hover"
-                >
-                  +994 12 526-40-40
-                </a>
-              </li>
-              <li class="text-p-color text-[9px] hover:text-nav-hover group">
-                <a
-                  href=""
-                  class="text-p-color text-sm md:text-lg md:leading-5 group-hover:text-nav-hover"
-                >
-                  info@peugeot.ge
-                </a>
-              </li>
-              <li class="text-p-color text-[9px] hover:text-nav-hover group">
-                <a
-                  href=""
-                  class="text-p-color text-sm md:text-lg md:leading-5 group-hover:text-nav-hover"
-                >
-                  Georgia, Tbilisi, Rustaveli Ave. 49, TB1031
-                </a>
-              </li>
-            </ul>
-            <div class="social-container flex flex-row pb-6 pt-7">
-              <a href="" class="soc-img hover:scale-125 hover:duration-150">
-                <img src="./assets/img/Facebook.svg" alt="Facebook" />
-              </a>
-              <a href="" class="soc-img hover:scale-125 hover:duration-150">
-                <img src="./assets/img/Instagram.svg" alt="Instagram" />
-              </a>
-              <a href="" class="soc-img hover:scale-125 hover:duration-150">
-                <img src="./assets/img/Youtube.svg" alt="Youtube" />
-              </a>
-              <a href="" class="soc-img hover:scale-125 hover:duration-150">
-                <img src="./assets/img/Linkedin.svg" alt="Linkedin" />
-              </a>
-            </div>
+            <a
+              href=""
+              class="flex items-center leading-5 uppercase h-[42px] w-[42px] text-lg text-white font-semibold hover:text-button-color"
+            >
+              eng
+            </a>
           </div>
         </div>
-        <div class="footerlogo flex-center pb-6">
-          <div class="flex flex-col justify-center items-center gap-2">
-            <div>
-              <img src="./assets/img/footerlogo.svg" alt="Footer LOGO" />
+        <!-- MENU DROPDOWN START -->
+        <div
+          id="menu-dropdown"
+          class="fixed bg-black top-[70px] left-0 transition-all duration-300 w-full bg-opacity-75 height-zero invisible opacity-0"
+        >
+          <div class="bg-white h-[540px] w-full flex">
+            <span class="absolute top-4 left-4 cursor-pointer">
+              <img src="./assets/img/drop-close.svg" alt="" />
+            </span>
+            <div
+              class="grid grid-cols-2 gap-8 pt-12 pl-[93px] pr-[163px] gap-x-[246px] gap-y-[34px]"
+            >
+              <div class="menu-card">
+                <h3 class="uppercase text-title font-bold text-xl pb-6">
+                  about peugeot
+                </h3>
+                <ul class="">
+                  <li class="mb-1">
+                    <a
+                      href="./about.html"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >History of peugeot</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-card">
+                <h3 class="uppercase text-title font-bold text-xl pb-6">
+                  environment
+                </h3>
+                <ul class="">
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >Continuity</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >WLTP</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-card">
+                <h3 class="uppercase text-title font-bold text-xl pb-6">
+                  innovation
+                </h3>
+                <ul class="">
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >Concept vehicles</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >Peugeot I-cockpit</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >Concept vehicles</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >Peugeot I-cockpit</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >Concept vehicles</a
+                    >
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      href="#"
+                      class="text-lg font-medium text-[#11141C] text-opacity-65 hover:text-opacity-100 leading[21px]"
+                      >Peugeot I-cockpit</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <a href="">
-              <p
-                class="text-p-color text-[13px] leading-4 md:text-[22px] md:leading-[22px]"
-              >
-                RULES OF USE
-              </p>
-            </a>
+            <div
+              class="drop-image w-[200px] h-full bg-[url('./assets/img/drop-image.png')]"
+            ></div>
+            <div>
+              <div class="pt-8 pl-7 w-48">
+                <h3 class="text-xl font-bold uppercase mb-3 text-title-black">
+                  Have a question?
+                </h3>
+                <button class="btn-hero h-10 w-full">contact</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
+
+    <div class="global-container" id="globalContainer">
+      <!-- FIRST SECTION -->
+      <div
+        class="section-one justify-center xl:justify-start h-screen md:bg-[url('./assets/img/desktop-hero-banner.jpg')] bg-[url('./assets/img/mobile-hero-banner.png')] bg-cover bg-center bg-no-repeat flex items-end pb-[34px] xl:pb-[54px] pl-[54px]"
+      >
+        <button class="btn-hero h-14 w-[300px] rounded-none">
+          SIGN UP FOR TEST DRIVE!
+        </button>
+      </div>
+      <!-- SECOND SECTION -->
+      <footer>
+        <div class="second-section bg-black">
+          <div class="flex-container flex flex-col md:flex-row items-center">
+            <a
+              href=""
+              class="address flex flex-row items-center py-6 border-b-[1px] border-border-color w-full text-white hover:text-nav-hover group"
+            >
+              <div
+                class="center-items flex flex-row items-center content-center m-auto gap-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g opacity="0.6">
+                    <path
+                      class="group-hover:fill-nav-hover"
+                      d="M14.7808 19.7005L14.1906 19.2377L14.7808 19.7005ZM9.21921 19.7005L8.62903 20.1633L9.21921 19.7005ZM12 22.0055V21.2555V22.0055ZM19.25 9.6087C19.25 10.8352 18.6104 12.4764 17.6037 14.256C16.6137 16.0063 15.3342 17.7794 14.1906 19.2377L15.371 20.1633C16.5371 18.6762 17.8672 16.837 18.9094 14.9945C19.9349 13.1814 20.75 11.2494 20.75 9.6087H19.25ZM9.80938 19.2377C8.66578 17.7794 7.38628 16.0063 6.39625 14.256C5.38962 12.4764 4.75 10.8352 4.75 9.6087H3.25C3.25 11.2494 4.06511 13.1814 5.09064 14.9945C6.13277 16.837 7.46288 18.6762 8.62903 20.1633L9.80938 19.2377ZM4.75 9.6087C4.75 5.21571 8.04678 1.75 12 1.75V0.25C7.11666 0.25 3.25 4.49277 3.25 9.6087H4.75ZM12 1.75C15.9532 1.75 19.25 5.21571 19.25 9.6087H20.75C20.75 4.49277 16.8833 0.25 12 0.25V1.75ZM14.1906 19.2377C13.5717 20.027 13.1641 20.5426 12.7992 20.8741C12.4664 21.1764 12.2442 21.2555 12 21.2555V22.7555C12.7291 22.7555 13.2948 22.4504 13.8078 21.9844C14.2886 21.5476 14.7849 20.9107 15.371 20.1633L14.1906 19.2377ZM8.62903 20.1633C9.21511 20.9107 9.71136 21.5476 10.1922 21.9844C10.7052 22.4504 11.2709 22.7555 12 22.7555V21.2555C11.7558 21.2555 11.5336 21.1764 11.2008 20.8741C10.8359 20.5426 10.4283 20.027 9.80938 19.2377L8.62903 20.1633ZM8.25 10C8.25 12.0711 9.92893 13.75 12 13.75V12.25C10.7574 12.25 9.75 11.2426 9.75 10H8.25ZM12 13.75C14.0711 13.75 15.75 12.0711 15.75 10H14.25C14.25 11.2426 13.2426 12.25 12 12.25V13.75ZM15.75 10C15.75 7.92893 14.0711 6.25 12 6.25V7.75C13.2426 7.75 14.25 8.75736 14.25 10H15.75ZM12 6.25C9.92893 6.25 8.25 7.92893 8.25 10H9.75C9.75 8.75736 10.7574 7.75 12 7.75V6.25Z"
+                      fill="white"
+                      fill-opacity="0.8"
+                    />
+                  </g>
+                </svg>
+                <h1
+                  class="font-semibold leading-4 md:leading-7 md:text-2xl text-center text-base"
+                >
+                  ADDRESS
+                </h1>
+              </div>
+            </a>
+            <a
+              href=""
+              class="brochures flex flex-row items-center py-6 border-b-[1px] md:border-x-[1px] border-border-color w-full text-white hover:text-nav-hover group"
+            >
+              <div
+                class="center-items flex flex-row items-center content-center m-auto gap-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.8">
+                    <path
+                      class="group-hover:fill-nav-hover"
+                      d="M5.06107 21.0451L5.50191 20.4383L5.06107 21.0451ZM3.95491 19.9389L4.56168 19.4981L3.95491 19.9389ZM20.0451 19.9389L19.4383 19.4981L20.0451 19.9389ZM18.9389 21.0451L18.4981 20.4383L18.9389 21.0451ZM18.9389 2.95491L18.4981 3.56168L18.9389 2.95491ZM20.0451 4.06107L19.4383 4.50191L20.0451 4.06107ZM5.06107 2.95491L5.50191 3.56168L5.06107 2.95491ZM3.95491 4.06107L4.56168 4.50191L3.95491 4.06107ZM8 7.25C7.58579 7.25 7.25 7.58579 7.25 8C7.25 8.41421 7.58579 8.75 8 8.75V7.25ZM16 8.75C16.4142 8.75 16.75 8.41421 16.75 8C16.75 7.58579 16.4142 7.25 16 7.25V8.75ZM8 11.25C7.58579 11.25 7.25 11.5858 7.25 12C7.25 12.4142 7.58579 12.75 8 12.75V11.25ZM16 12.75C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25V12.75ZM13 15.25C12.5858 15.25 12.25 15.5858 12.25 16C12.25 16.4142 12.5858 16.75 13 16.75V15.25ZM16 16.75C16.4142 16.75 16.75 16.4142 16.75 16C16.75 15.5858 16.4142 15.25 16 15.25V16.75ZM20.25 11V13H21.75V11H20.25ZM3.75 13V11H2.25V13H3.75ZM12 21.25C10.1084 21.25 8.74999 21.249 7.69804 21.135C6.66013 21.0225 6.00992 20.8074 5.50191 20.4383L4.62023 21.6518C5.42656 22.2377 6.37094 22.5 7.53648 22.6263C8.68798 22.751 10.1418 22.75 12 22.75V21.25ZM2.25 13C2.25 14.8582 2.24897 16.312 2.37373 17.4635C2.50001 18.6291 2.76232 19.5734 3.34815 20.3798L4.56168 19.4981C4.19259 18.9901 3.97745 18.3399 3.865 17.302C3.75103 16.25 3.75 14.8916 3.75 13H2.25ZM5.50191 20.4383C5.14111 20.1762 4.82382 19.8589 4.56168 19.4981L3.34815 20.3798C3.70281 20.8679 4.13209 21.2972 4.62023 21.6518L5.50191 20.4383ZM20.25 13C20.25 14.8916 20.249 16.25 20.135 17.302C20.0225 18.3399 19.8074 18.9901 19.4383 19.4981L20.6518 20.3798C21.2377 19.5734 21.5 18.6291 21.6263 17.4635C21.751 16.312 21.75 14.8582 21.75 13H20.25ZM12 22.75C13.8582 22.75 15.312 22.751 16.4635 22.6263C17.6291 22.5 18.5734 22.2377 19.3798 21.6518L18.4981 20.4383C17.9901 20.8074 17.3399 21.0225 16.302 21.135C15.25 21.249 13.8916 21.25 12 21.25V22.75ZM19.4383 19.4981C19.1762 19.8589 18.8589 20.1762 18.4981 20.4383L19.3798 21.6518C19.8679 21.2972 20.2972 20.8679 20.6518 20.3798L19.4383 19.4981ZM12 2.75C13.8916 2.75 15.25 2.75103 16.302 2.865C17.3399 2.97745 17.9901 3.19259 18.4981 3.56168L19.3798 2.34815C18.5734 1.76232 17.6291 1.50001 16.4635 1.37373C15.312 1.24897 13.8582 1.25 12 1.25V2.75ZM21.75 11C21.75 9.14184 21.751 7.68798 21.6263 6.53648C21.5 5.37094 21.2377 4.42656 20.6518 3.62023L19.4383 4.50191C19.8074 5.00992 20.0225 5.66013 20.135 6.69804C20.249 7.74999 20.25 9.10843 20.25 11H21.75ZM18.4981 3.56168C18.8589 3.82382 19.1762 4.14111 19.4383 4.50191L20.6518 3.62023C20.2972 3.13209 19.8679 2.70281 19.3798 2.34815L18.4981 3.56168ZM12 1.25C10.1418 1.25 8.68798 1.24897 7.53648 1.37373C6.37094 1.50001 5.42656 1.76232 4.62023 2.34815L5.50191 3.56168C6.00992 3.19259 6.66013 2.97745 7.69804 2.865C8.74999 2.75103 10.1084 2.75 12 2.75V1.25ZM3.75 11C3.75 9.10843 3.75103 7.74999 3.865 6.69804C3.97745 5.66013 4.19259 5.00992 4.56168 4.50191L3.34815 3.62023C2.76232 4.42656 2.50001 5.37094 2.37373 6.53648C2.24897 7.68798 2.25 9.14184 2.25 11H3.75ZM4.62023 2.34815C4.13209 2.70281 3.70281 3.13209 3.34815 3.62023L4.56168 4.50191C4.82382 4.14111 5.14111 3.82382 5.50191 3.56168L4.62023 2.34815ZM8 8.75H16V7.25H8V8.75ZM8 12.75H16V11.25H8V12.75ZM13 16.75H16V15.25H13V16.75Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+
+                <h1
+                  class="font-semibold leading-4 md:leading-7 md:text-2xl text-center text-base"
+                >
+                  BROCHURES
+                </h1>
+              </div></a
+            >
+            <a
+              href="./contact.html"
+              class="contact flex flex-row items-center py-6 border-b-[1px] border-border-color w-full text-white hover:text-nav-hover group"
+            >
+              <div
+                class="center-items flex flex-row items-center content-center m-auto gap-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.6">
+                    <path
+                      class="group-hover:fill-nav-hover"
+                      d="M4.92893 7.92893L5.45926 7.3986L4.92893 7.92893ZM3 6L2.46967 6.53033L3 6ZM11 20.25C10.5858 20.25 10.25 20.5858 10.25 21C10.25 21.4142 10.5858 21.75 11 21.75V20.25ZM21.0451 18.9389L20.4383 18.4981V18.4981L21.0451 18.9389ZM19.9389 20.0451L19.4981 19.4383V19.4383L19.9389 20.0451ZM19.9389 3.95491L20.3798 3.34815V3.34815L19.9389 3.95491ZM21.0451 5.06107L20.4383 5.50191V5.50191L21.0451 5.06107ZM4.06107 3.95491L3.62023 3.34815L3.62023 3.34815L4.06107 3.95491ZM1.25 12C1.25 12.4142 1.58579 12.75 2 12.75C2.41421 12.75 2.75 12.4142 2.75 12H1.25ZM2.95491 5.06107L2.34815 4.62023L2.34815 4.62023L2.95491 5.06107ZM1 18.25C0.585786 18.25 0.25 18.5858 0.25 19C0.25 19.4142 0.585786 19.75 1 19.75V18.25ZM7 19.75C7.41421 19.75 7.75 19.4142 7.75 19C7.75 18.5858 7.41421 18.25 7 18.25V19.75ZM1 15.25C0.585786 15.25 0.25 15.5858 0.25 16C0.25 16.4142 0.585786 16.75 1 16.75V15.25ZM4 16.75C4.41421 16.75 4.75 16.4142 4.75 16C4.75 15.5858 4.41421 15.25 4 15.25V16.75ZM2.62103 5.62103L1.94538 5.29546L2.62103 5.62103ZM5.45926 7.3986L3.65165 5.59099L2.59099 6.65165L4.3986 8.45926L5.45926 7.3986ZM20.3483 5.59099L18.5407 7.3986L19.6014 8.45926L21.409 6.65165L20.3483 5.59099ZM4.3986 8.45926C6.05028 10.1109 7.34126 11.4042 8.48288 12.2752C9.64181 13.1594 10.7345 13.6789 12 13.6789V12.1789C11.1944 12.1789 10.4183 11.8651 9.39275 11.0827C8.34994 10.287 7.14092 9.08026 5.45926 7.3986L4.3986 8.45926ZM18.5407 7.3986C16.8591 9.08026 15.6501 10.287 14.6072 11.0827C13.5817 11.8651 12.8056 12.1789 12 12.1789V13.6789C13.2655 13.6789 14.3582 13.1594 15.5171 12.2752C16.6587 11.4042 17.9497 10.1109 19.6014 8.45926L18.5407 7.3986ZM5.45926 7.3986L3.53033 5.46967L2.46967 6.53033L4.3986 8.45926L5.45926 7.3986ZM20.4697 5.46967L18.5407 7.3986L19.6014 8.45926L21.5303 6.53033L20.4697 5.46967ZM11 3.75H13V2.25H11V3.75ZM13 20.25H11V21.75H13V20.25ZM21.25 12C21.25 13.8916 21.249 15.25 21.135 16.302C21.0225 17.3399 20.8074 17.9901 20.4383 18.4981L21.6518 19.3798C22.2377 18.5734 22.5 17.6291 22.6263 16.4635C22.751 15.312 22.75 13.8582 22.75 12H21.25ZM13 21.75C14.8582 21.75 16.312 21.751 17.4635 21.6263C18.6291 21.5 19.5734 21.2377 20.3798 20.6518L19.4981 19.4383C18.9901 19.8074 18.3399 20.0225 17.302 20.135C16.25 20.249 14.8916 20.25 13 20.25V21.75ZM20.4383 18.4981C20.1762 18.8589 19.8589 19.1762 19.4981 19.4383L20.3798 20.6518C20.8679 20.2972 21.2972 19.8679 21.6518 19.3798L20.4383 18.4981ZM13 3.75C14.8916 3.75 16.25 3.75103 17.302 3.865C18.3399 3.97745 18.9901 4.19259 19.4981 4.56168L20.3798 3.34815C19.5734 2.76232 18.6291 2.50001 17.4635 2.37373C16.312 2.24897 14.8582 2.25 13 2.25V3.75ZM19.4981 4.56168C19.8589 4.82382 20.1762 5.14111 20.4383 5.50191L21.6518 4.62024C21.2972 4.13209 20.8679 3.70281 20.3798 3.34815L19.4981 4.56168ZM11 2.25C9.14184 2.25 7.68798 2.24897 6.53648 2.37373C5.37094 2.50001 4.42656 2.76232 3.62023 3.34815L4.50191 4.56168C5.00992 4.19259 5.66013 3.97745 6.69804 3.865C7.74999 3.75103 9.10843 3.75 11 3.75V2.25ZM3.62023 3.34815C3.13209 3.70281 2.70281 4.13209 2.34815 4.62023L3.56168 5.50191C3.82382 5.14111 4.14111 4.82382 4.50191 4.56168L3.62023 3.34815ZM1 19.75H7V18.25H1V19.75ZM1 16.75H4V15.25H1V16.75ZM2.75 12C2.75 10.3648 2.75049 9.12493 2.8255 8.13204C2.90037 7.14093 3.04588 6.46709 3.29668 5.9466L1.94538 5.29546C1.57515 6.06379 1.41014 6.95506 1.32976 8.01904C1.24951 9.08125 1.25 10.3864 1.25 12H2.75ZM3.29668 5.9466C3.37348 5.78722 3.46113 5.64031 3.56168 5.50191L2.34815 4.62023C2.19354 4.83304 2.06012 5.05734 1.94538 5.29546L3.29668 5.9466ZM3.53033 5.46967L3.15136 5.0907L2.0907 6.15136L2.46967 6.53033L3.53033 5.46967ZM22.75 12C22.75 10.3864 22.7505 9.08125 22.6702 8.01904C22.5899 6.95506 22.4248 6.06379 22.0546 5.29546L20.7033 5.9466C20.9541 6.46709 21.0996 7.14093 21.1745 8.13204C21.2495 9.12493 21.25 10.3648 21.25 12H22.75ZM22.0546 5.29546C21.9399 5.05734 21.8065 4.83304 21.6518 4.62024L20.4383 5.50191C20.5389 5.64031 20.6265 5.78722 20.7033 5.9466L22.0546 5.29546ZM21.5303 6.53033L21.9093 6.15136L20.8486 5.0907L20.4697 5.46967L21.5303 6.53033Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+
+                <h1
+                  class="font-semibold leading-4 md:leading-7 md:text-2xl text-center text-base"
+                >
+                  CONTACT
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- footer -->
+          <div
+            class="footer lg:px-[155px] px-6 flex flex-col gap-y-8 lg:gap-y-0 md:flex-row md:justify-between font-semibold pt-8"
+          >
+            <div class="models text-sm">
+              <h3
+                class="text-white pb-5 md:pb-6 hover:text-nav-hover text-base md:leading-7 md:text-2xl"
+              >
+                MODELS
+              </h3>
+              <div class="models-padding flex flex-col gap-1 md:gap-[10px]">
+                <a
+                  href=""
+                  class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
+                  >Hatchback</a
+                >
+                <a
+                  href=""
+                  class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
+                  >Sedan</a
+                >
+                <a
+                  href=""
+                  class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
+                  >Boxer</a
+                >
+                <a
+                  href=""
+                  class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
+                  >SUV</a
+                >
+                <a
+                  href=""
+                  class="text-p-color md:text-lg md:leading-5 hover:text-nav-hover"
+                  >Transit</a
+                >
+              </div>
+            </div>
+            <div class="">
+              <h3
+                class="text-white hover:text-nav-hover pb-5 md:pb-6 text-base md:leading-7 md:text-2xl"
+              >
+                CONTACT
+              </h3>
+              <a
+                href=""
+                class="text-p-color hover:text-nav-hover md:text-lg md:leading-5"
+                >Get an offer</a
+              >
+            </div>
+            <div class="contact">
+              <h3
+                class="text-white pb-5 md:pb-6 text-base md:leading-7 md:text-2xl hover:text-nav-hover"
+              >
+                CONTACT US
+              </h3>
+              <ul class="list-disc translate-x-3">
+                <li
+                  class="text-p-color pb-2 text-[9px] hover:text-nav-hover group"
+                >
+                  <span
+                    href=""
+                    class="text-p-color pb-2 text-sm md:text-lg md:leading-5 group-hover:text-nav-hover"
+                  >
+                    +994 12 526-40-40
+                  </span>
+                </li>
+                <li
+                  class="text-p-color pb-2 text-[9px] hover:text-nav-hover group"
+                >
+                  <span
+                    href=""
+                    class="text-p-color text-sm md:text-lg md:leading-5 group-hover:text-nav-hover"
+                  >
+                    info@peugeot.ge
+                  </span>
+                </li>
+                <li
+                  class="text-p-color pb-2 text-[9px] hover:text-nav-hover group"
+                >
+                  <span
+                    href=""
+                    class="text-p-color text-sm md:text-lg md:leading-5 group-hover:text-nav-hover"
+                  >
+                    Georgia, Tbilisi, Rustaveli Ave. 49, TB1031
+                  </span>
+                </li>
+              </ul>
+              <div class="social-container flex flex-row pt-2">
+                <a href="" class="soc-img hover:scale-125 hover:duration-150">
+                  <img src="./assets/img/Facebook.svg" alt="Facebook" />
+                </a>
+                <a href="" class="soc-img hover:scale-125 hover:duration-150">
+                  <img src="./assets/img/Instagram.svg" alt="Instagram" />
+                </a>
+                <a href="" class="soc-img hover:scale-125 hover:duration-150">
+                  <img src="./assets/img/Youtube.svg" alt="Youtube" />
+                </a>
+                <a href="" class="soc-img hover:scale-125 hover:duration-150">
+                  <img src="./assets/img/Linkedin.svg" alt="Linkedin" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footerlogo flex-center mt-8 pb-6">
+            <div class="flex flex-col justify-center items-center gap-2">
+              <div class="w-20 mb-2">
+                <img
+                  class="w-full"
+                  src="./assets/img/footerlogo.svg"
+                  alt="Footer LOGO"
+                />
+              </div>
+              <div>
+                <a
+                  href="./index.html"
+                  class="text-p-color text-[13px] leading-4 md:text-[22px] md:leading-[22px]"
+                >
+                  RULES OF USE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <script src="main.js"></script> -->
   </body>
 </html>

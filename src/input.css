@@ -22,6 +22,10 @@
   src: url("/src/assets/fonts/Montserrat-Bold.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .flex-center {
   @apply flex items-center justify-center;
 }
@@ -61,15 +65,11 @@
 }
 
 .btn-hero {
-  @apply bg-[#00A3E0] text-white text-sm rounded border-2 border-sky-500 border-opacity-35 uppercase font-bold;
+  @apply bg-[#00A3E0] text-white text-sm border-2 border-sky-500 border-opacity-35 uppercase font-bold hover:bg-black transition-all duration-300;
 }
 
-.header {
-  @apply bg-transparent md:pt-7;
-}
-
-.header-padding {
-  @apply bg-black md:pt-2;
+.header-shrink {
+  @apply bg-black md:h-[70px];
 }
 .show-item {
   @apply opacity-100 visible;
@@ -82,4 +82,7 @@
 }
 .height-screen {
   @apply h-screen overflow-visible;
+}
+.header-border {
+  @apply border-b-2 border-white;
 }
